@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Sujith A
+* **Register Number**: 212224230278
+* **Date of Submission**: 14.03.2026
 
 ---
 
@@ -82,13 +82,12 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. First, a security group named DB Security Group was created to allow the web server to connect to the database using port 3306 (MySQL).
+2. A DB Subnet Group was created with subnets from two Availability Zones to allow the database to run in a Multi-AZ environment for high availability.
+3. A MySQL RDS instance named lab-db was created with the database name lab, username main, and password lab-password.
+4. The database was associated with the DB Security Group and the Lab VPC so that the web server can securely connect to the database.
+5. The web application running on the EC2 server was opened using its IP address, and the RDS endpoint, database name, username, and password were entered to interact with the database.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
 
 ---
 
@@ -96,19 +95,19 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
+<img width="1920" height="1008" alt="Screenshot 2026-03-13 140122" src="https://github.com/user-attachments/assets/3f0bda2b-f653-46f8-957d-7885dccb12df" />
 
 ---
 
 ### Screenshot 2: Database Service Running
+<img width="1130" height="1008" alt="Screenshot 2026-03-13 142023" src="https://github.com/user-attachments/assets/8e900a92-ae3a-4b3b-93c9-77409f18eea3" />
 
-(Insert Screenshot Here)
 
 ---
 
 ### Screenshot 3: Sample Database and Table
+<img width="950" height="1008" alt="Screenshot 2026-03-13 143307" src="https://github.com/user-attachments/assets/fb4cfef1-14bf-410d-b7a8-2c86cea31f37" />
 
-(Insert Screenshot Here)
 
 ---
 
